@@ -1,1 +1,48 @@
-node_modules
+# See https://git-scm.com/docs/gitignore for more details
+
+# Node modules
+/node_modules/
+
+# Dependency directories
+/npm-debug.log
+/yarn-error.log
+
+# Angular build output
+/dist/
+/build/
+
+/# Temporary files
+/.angular/
+/.angular/
+
+# IDE directories and files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# JetBrains IDEs
+/.idea/
+
+# Environment files
+/.env
+/.env.local
+/.env.*.local
+
+# npm package-lock and yarn.lock files
+package-lock.json
+yarn.lock
+
+# Test coverage
+/coverage/
+
+# Production build
+/angular.json
+
+# Temporary files for VSCode
+.vscode/
+
+# TypeScript build outputs
+*.tsbuildinfo
