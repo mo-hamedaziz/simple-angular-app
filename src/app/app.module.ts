@@ -10,6 +10,10 @@ import { MiniWordComponent } from './mini-word/mini-word.component';
 import { DefaultImgNamePipe } from './default-img-name.pipe';
 import { CarteVisiteComponent } from './carte-visite/carte-visite.component';
 import { RainbowTextDirective } from './rainbow-text.directive';
+import { CvComponent } from './cv/cv.component';
+import { CvDetailComponent } from './cv-detail/cv-detail.component';
+import { CvItemComponent } from './cv-item/cv-item.component';
+import { CvListComponent } from './cv-list/cv-list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { RainbowTextDirective } from './rainbow-text.directive';
     MiniWordComponent,
     DefaultImgNamePipe,
     CarteVisiteComponent,
-    RainbowTextDirective
+    RainbowTextDirective,
+    CvComponent,
+    CvDetailComponent,
+    CvItemComponent,
+    CvListComponent
   ],
   imports: [
     BrowserModule,

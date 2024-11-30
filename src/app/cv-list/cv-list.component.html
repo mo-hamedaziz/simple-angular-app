@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let cv of cvs" (click)="onCvClick(cv)" [ngStyle]="{ 'cursor': 'pointer' }">
+      <app-cv-item [cv]="cv"></app-cv-item>
+    </li>
+  </ul>

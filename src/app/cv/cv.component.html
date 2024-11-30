@@ -1,0 +1,12 @@
+<div class="container">
+  <div *ngIf="cvs.length === 0">
+    <p>Aucun CV n'est disponible.</p>
+  </div>
+
+  <div class="list" *ngIf="cvs.length > 0">
+    <app-cv-list [cvs]="cvs" (cvClick)="onCvClick($event)"></app-cv-list>
+  </div>
+  <div class="details" *ngIf="selectedCv">
+    <app-cv-detail *ngIf="selectedCv" [cv]="selectedCv" (close)="closeDetails()"></app-cv-detail>
+  </div>
+</div>
