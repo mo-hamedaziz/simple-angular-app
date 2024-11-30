@@ -1,0 +1,7 @@
+<div #colorDiv [style.backgroundColor]="currentColor"
+    style="width: 200px; height: 200px; margin-bottom: 10px;">
+</div>
+
+<input type="text" [(ngModel)]="inputColor" placeholder="Choose a color" />
+<button type="submit" (click)="changeColor()">Apply color</button>
+<button (click)="resetColor()">Default color</button>

@@ -1,0 +1,6 @@
+<div>
+    <h3>Child Component</h3>
+    <p>My parent's background color is: <span [ngStyle]="{'background-color': parentBgColor}">{{parentBgColor}}</span></p>
+    <p>My favourite color is: <span [ngStyle]="{'background-color': myFavColor}">{{ myFavColor}}</span></p>
+    <button (click)="changeParentBg()">Pass the color to my parent</button>
+</div>

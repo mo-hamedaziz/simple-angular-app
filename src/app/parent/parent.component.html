@@ -1,0 +1,4 @@
+<div>
+    <h2 [ngStyle]="{'background-color': bgColor}">Parent Component</h2>
+    <app-child [parentBgColor]="bgColor" (changeColor)="changeBgColor($event)"></app-child>
+</div>

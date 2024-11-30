@@ -1,0 +1,13 @@
+<div *ngIf="cv">
+    <button (click)="closeDetails()" class="close-btn">X</button>
+
+    <h3>Détails du CV</h3>
+
+    <img src="{{ cv.pathToPhoto }}" alt="Photo">
+    <p><strong>Nom complet :</strong> {{ cv.firstName }} {{ cv.lastName }}</p>
+    <p><strong>Age :</strong> {{ cv.age }} ans</p>
+    <p><strong>CIN :</strong> {{ cv.cin }}</p>
+    <p><strong>Poste :</strong> {{ cv.job }}</p>
+    <!-- <p><strong>CV PDF :</strong> <a [href]="cv.pathToPhoto" target="_blank">Télécharger le CV</a></p> -->
+  </div>
+  

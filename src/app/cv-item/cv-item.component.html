@@ -1,0 +1,6 @@
+<div>
+  <strong [ngClass]="{ 'highlight': cv.age > 30 }"
+    [ngStyle]="{ 'border-bottom': cv.age > 30 ? '2px solid red' : '2px solid green' }">{{ cv.firstName }} {{
+    cv.lastName }}</strong>
+  <p>{{ cv.job }} - {{ cv.age }} ans</p>
+</div>
