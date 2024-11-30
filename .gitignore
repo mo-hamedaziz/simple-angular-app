@@ -1,44 +1,58 @@
-# Node modules
-/node_modules/
+.DS_STORE
 
-# Dependency directories
-/npm-debug.log
-/yarn-error.log
-
-# Angular build output
 /dist/
-/build/
+/bazel-out
+/integration/bazel/bazel-*
+*.log
+node_modules/
+modules/ssr-benchmarks/node_modules/
 
-/# Temporary files
-/.angular/
-/.angular/
-
-# IDE directories and files
-.vscode/
+# Include when developing application packages.
+pubspec.lock
+.c9
 .idea/
+.devcontainer/*
+!.devcontainer/README.md
+!.devcontainer/recommended-devcontainer.json
+!.devcontainer/recommended-Dockerfile
+.settings/
+.vscode/launch.json
+.vscode/settings.json
+.vscode/tasks.json
+*.swo
+*.swp
+modules/.settings
+modules/.vscode
+.vimrc
+.nvimrc
 
-# OS generated files
-.DS_Store
-Thumbs.db
+# Don't check in secret files
+*secret.js
 
-# JetBrains IDEs
-/.idea/
+# Ignore npm/yarn debug log
+npm-debug.log
+yarn-error.log
 
-# Environment files
-/.env
-/.env.local
-/.env.*.local
+# build-analytics
+.build-analytics
 
-# npm package-lock and yarn.lock files
-yarn.lock
+# rollup-test output
+/modules/rollup-test/dist/
 
-# Test coverage
-/coverage/
+# User specific bazel settings
+.bazelrc.user
 
-# Production build
+# User specific ng-dev settings
+.ng-dev.user*
 
-# Temporary files for VSCode
-.vscode/
+.notes.md
+baseline.json
 
-# TypeScript build outputs
-*.tsbuildinfo
+# Ignore .history for the xyz.local-history VSCode extension
+.history
+
+# Husky
+.husky/_
+
+# Ignore cache created with the Angular CLI.
+.angular/
