@@ -14,6 +14,7 @@ import { CvComponent } from './cv/cv.component';
 import { CvDetailComponent } from './cv-detail/cv-detail.component';
 import { CvItemComponent } from './cv-item/cv-item.component';
 import { CvListComponent } from './cv-list/cv-list.component';
+import { HiredListComponent } from './hired-list/hired-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CvListComponent } from './cv-list/cv-list.component';
     CvComponent,
     CvDetailComponent,
     CvItemComponent,
-    CvListComponent
+    CvListComponent,
+    HiredListComponent
   ],
   imports: [
     BrowserModule,

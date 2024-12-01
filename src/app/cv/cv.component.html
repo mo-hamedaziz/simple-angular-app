@@ -9,4 +9,6 @@
   <div class="details" *ngIf="selectedCv">
     <app-cv-detail *ngIf="selectedCv" [cv]="selectedCv" (close)="closeDetails()"></app-cv-detail>
   </div>
+
+  <app-hired-list></app-hired-list>
 </div>
