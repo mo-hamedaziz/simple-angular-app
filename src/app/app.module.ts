@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppComponent } from './app.component';
 import { ColorComponent } from './color/color.component';
@@ -14,6 +16,9 @@ import { CvComponent } from './cv/cv.component';
 import { CvDetailComponent } from './cv-detail/cv-detail.component';
 import { CvItemComponent } from './cv-item/cv-item.component';
 import { CvListComponent } from './cv-list/cv-list.component';
+import { HiredListComponent } from './hired-list/hired-list.component';
+import { HeaderComponent } from './header/header.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -28,11 +33,20 @@ import { CvListComponent } from './cv-list/cv-list.component';
     CvComponent,
     CvDetailComponent,
     CvItemComponent,
-    CvListComponent
+    CvListComponent,
+    HiredListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      positionClass: 'toast-top-right',
+      preventDuplicates: true,
+    }),
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
