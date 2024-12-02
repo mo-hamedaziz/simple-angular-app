@@ -17,6 +17,8 @@ import { CvDetailComponent } from './cv-detail/cv-detail.component';
 import { CvItemComponent } from './cv-item/cv-item.component';
 import { CvListComponent } from './cv-list/cv-list.component';
 import { HiredListComponent } from './hired-list/hired-list.component';
+import { HeaderComponent } from './header/header.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { HiredListComponent } from './hired-list/hired-list.component';
     CvDetailComponent,
     CvItemComponent,
     CvListComponent,
-    HiredListComponent
+    HiredListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,7 @@ import { HiredListComponent } from './hired-list/hired-list.component';
       positionClass: 'toast-top-right',
       preventDuplicates: true,
     }),
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
