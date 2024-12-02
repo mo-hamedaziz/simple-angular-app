@@ -1,15 +1,28 @@
 div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  strong {
-    font-size: 1.1rem;
-    color: #333;
-  }
-  
-  p {
-    margin: 0;
-    color: #555;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+strong {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+p {
+  margin: 0;
+  color: #555;
+}
+
+.details-btn {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.details-btn:hover {
+  background-color: #1976d2;
+}

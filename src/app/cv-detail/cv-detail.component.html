@@ -10,6 +10,7 @@
     <p><strong>Poste :</strong> {{ cv.job }}</p>
     <!-- <p><strong>CV PDF :</strong> <a [href]="cv.pathToPhoto" target="_blank">Télécharger le CV</a></p> -->
 
-    <button (click)="embaucher(cv)">Embaucher</button>
+    <button (click)="embaucher(cv)" class="embaucher-btn">Embaucher</button>
+    <button (click)="deleteCv()" class="delete-btn">Supprimer</button>
   </div>
   

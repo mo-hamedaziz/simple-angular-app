@@ -6,6 +6,7 @@ import { CarteVisiteComponent } from './carte-visite/carte-visite.component';
 import { ParentComponent } from './parent/parent.component';
 import { CvComponent } from './cv/cv.component';
 import { MiniWordComponent } from './mini-word/mini-word.component';
+import { CvDetailComponent } from './cv-detail/cv-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/color', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'carte-visite', component: CarteVisiteComponent },
   { path: 'parent', component: ParentComponent },
   { path: 'cv', component: CvComponent },
+  { path: 'cv/:id', component: CvDetailComponent },
   { path: 'mini-word', component: MiniWordComponent },
   { path: '**', redirectTo: '/color', pathMatch: 'full' },
 ];

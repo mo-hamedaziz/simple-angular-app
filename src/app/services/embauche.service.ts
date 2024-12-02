@@ -16,4 +16,8 @@ export class EmbaucheService {
       this.embaucheList.push(cv);
     }
   }
+
+  deleteEmbauche(id: number): void {
+    this.embaucheList = this.embaucheList.filter((cv) => cv.id !== id);
+  }
 }

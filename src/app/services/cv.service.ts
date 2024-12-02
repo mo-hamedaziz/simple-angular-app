@@ -18,7 +18,15 @@ export class CvService {
     return this.cvs;
   }
 
-  // getCvById(id: number): Cv | undefined {
-  //   return this.cvs.find(cv => cv.id === id);
-  // }
+  getCvById(id: number): Cv {
+    const cv = this.cvs.find(cv => cv.id === id);
+    if (!cv) {
+      throw new Error(`CV with ID ${id} not found.`);
+    }
+    return cv;
+  }
+
+  deleteCv(id: number): void {
+    this.cvs = this.cvs.filter((cv) => cv.id !== id);
+  }
 }
