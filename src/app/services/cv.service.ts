@@ -14,11 +14,11 @@ export class CvService {
 
   constructor() { }
 
-  getCvs() {
+  getCvs(): Cv[] {
     return this.cvs;
   }
 
-  getCvById(id: number): Cv | undefined {
-    return this.cvs.find(cv => cv.id === id);
-  }
+  // getCvById(id: number): Cv | undefined {
+  //   return this.cvs.find(cv => cv.id === id);
+  // }
 }
