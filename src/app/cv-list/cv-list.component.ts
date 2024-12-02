@@ -19,7 +19,7 @@ export class CvListComponent {
     this.cvClick.emit(cv);
   }
 
-  embaucher(cv: any) {
+  embaucher(cv: Cv) {
     this.embaucheService.addToEmbauche(cv);
   }
 }

@@ -44,3 +44,31 @@ button.close-btn {
 button.close-btn:hover {
   background-color: darkred;
 }
+
+.embaucher-btn {
+  background-color: #2d19ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.embaucher-btn:hover {
+  background-color: #1300e9;
+}
+
+.delete-btn {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}
