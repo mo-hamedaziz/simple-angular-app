@@ -23,8 +23,13 @@ export class CvDetailComponent {
   ) {}
 
   ngOnInit(): void {
-    const id = +this.route.snapshot.paramMap.get('id')!;
-    this.cv = this.cvService.getCvById(id);
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+  
+    this.cvService.getCvById(id).subscribe(
+      (data: Cv) => {
+        this.cv = data;
+      }
+    );
   }
 
   closeDetails(): void {
@@ -34,18 +39,19 @@ export class CvDetailComponent {
   embaucher(cv: Cv): void {
     if (this.embaucheService.getEmbaucheList().includes(cv)) {
       this.toastr.warning(
-        `${cv.firstName} ${cv.lastName} est déjà embauché !`,
+        `${cv.name} ${cv.firstname} est déjà embauché !`,
         'Attention'
       );
     } else {
       this.embaucheService.addToEmbauche(cv);
       this.toastr.success(
-        `${cv.firstName} ${cv.lastName} a été embauché avec succès !`,
+        `${cv.name} ${cv.firstname} a été embauché avec succès !`,
         'Félicitations'
       );
     }
   }
 
+  // The DELETE endpoint has not been handled to prevent objects from being deleted from the database.
   deleteCv(): void {
     if (this.cv) {
       this.cvService.deleteCv(this.cv.id);
