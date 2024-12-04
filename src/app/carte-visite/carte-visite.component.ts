@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class CarteVisiteComponent {
   user = {
-    firstName: 'Aziz',
-    lastName: 'Bchini',
+    name: 'Aziz',
+    firstname: 'Bchini',
     job: 'Student',
-    pathToPhoto: 'assets/images/img1.png'
+    path: 'assets/images/img1.png'
   };
 }

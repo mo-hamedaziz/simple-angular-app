@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Cv } from '../models/cv.model';
 import { CvService } from '../services/cv.service';
 
@@ -24,6 +25,10 @@ export class CvComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.cvs = this.cvService.getCvs();
+    this.cvService.getCvs().subscribe(
+      (data: Cv[]) => {
+        this.cvs = data;
+      }
+    );
   }
 }

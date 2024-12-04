@@ -3,12 +3,12 @@
 
     <h3>Détails du CV</h3>
 
-    <img src="{{ cv.pathToPhoto }}" alt="Photo">
-    <p><strong>Nom complet :</strong> {{ cv.firstName }} {{ cv.lastName }}</p>
+    <!-- <img src="{{ cv.path }}" alt="Photo"> -->
+    <p><strong>Nom complet :</strong> {{ cv.name }} {{ cv.firstname }}</p>
     <p><strong>Age :</strong> {{ cv.age }} ans</p>
     <p><strong>CIN :</strong> {{ cv.cin }}</p>
     <p><strong>Poste :</strong> {{ cv.job }}</p>
-    <!-- <p><strong>CV PDF :</strong> <a [href]="cv.pathToPhoto" target="_blank">Télécharger le CV</a></p> -->
+    <p><strong>CV PDF :</strong> <a [href]="cv.path" target="_blank">Télécharger le CV</a></p>
 
     <button (click)="embaucher(cv)" class="embaucher-btn">Embaucher</button>
     <button (click)="deleteCv()" class="delete-btn">Supprimer</button>
