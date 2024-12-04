@@ -1,22 +1,22 @@
 <div class="container">
     <div class="form">
         <label>First Name :</label>
-        <input type="text" [(ngModel)]="user.firstName" placeholder="Nom" />
+        <input type="text" [(ngModel)]="user.name" placeholder="Nom" />
 
         <label>Last Name :</label>
-        <input type="text" [(ngModel)]="user.lastName" placeholder="Prénom" />
+        <input type="text" [(ngModel)]="user.firstname" placeholder="Prénom" />
 
         <label>Job :</label>
         <input type="text" [(ngModel)]="user.job" placeholder="Poste" />
 
         <label>Path to photo :</label>
-        <input type="text" [(ngModel)]="user.pathToPhoto" placeholder="Chemin de l'image" />
+        <input type="text" [(ngModel)]="user.path" placeholder="Chemin de l'image" />
     </div>
 
     <div class="card-preview">
         <div class="card">
-            <img [src]="user.pathToPhoto" alt="Photo de profil" />
-            <h2>{{ user.firstName }} {{ user.lastName }}</h2>
+            <img [src]="user.path" alt="Photo de profil" />
+            <h2>{{ user.name }} {{ user.firstname }}</h2>
             <p class="job">{{ user.job }}</p>
         </div>
     </div>
