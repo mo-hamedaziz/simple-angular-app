@@ -19,6 +19,7 @@ import { CvListComponent } from './cv-list/cv-list.component';
 import { HiredListComponent } from './hired-list/hired-list.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AuthFormComponent } from './auth-form/auth-form.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AppRoutingModule } from './app-routing.module';
     CvItemComponent,
     CvListComponent,
     HiredListComponent,
-    HeaderComponent
+    HeaderComponent,
+    AuthFormComponent
   ],
   imports: [
     BrowserModule,
