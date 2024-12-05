@@ -20,6 +20,7 @@ import { HiredListComponent } from './hired-list/hired-list.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthFormComponent } from './auth-form/auth-form.component';
+import { ImageLoopComponent } from './image-loop/image-loop.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AuthFormComponent } from './auth-form/auth-form.component';
     CvListComponent,
     HiredListComponent,
     HeaderComponent,
-    AuthFormComponent
+    AuthFormComponent,
+    ImageLoopComponent
   ],
   imports: [
     BrowserModule,

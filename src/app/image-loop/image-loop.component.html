@@ -1,0 +1,4 @@
+<div class="container">>
+    <img *ngIf="currentImage$ | async as currentImage" [src]="currentImage" [style.width]="imageWidth"
+        [style.height]="imageHeight" alt="carousel image" />
+</div>
